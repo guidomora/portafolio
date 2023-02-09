@@ -5,6 +5,7 @@ import Floreria from "./Proyectos/Floreria";
 import HeroesApp from "./Proyectos/HeroesApp";
 import List from "./Proyectos/List";
 import Peluqueria from "./Proyectos/Peluqueria";
+import Projects from "./Proyectos/Projects";
 
 const Body3 = () => {
   return (
@@ -32,11 +33,12 @@ const Body3 = () => {
           margin: 0,
         }}
       >
-        <HeroesApp />
+        {/* <HeroesApp />
         <Floreria />
         <Peluqueria />
         <Buscador />
-        <List />
+        <List /> */}
+        <Projects />
       </Grid>
     </Grid>
   );
