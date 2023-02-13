@@ -33,11 +33,6 @@ const Body3 = () => {
           margin: 0,
         }}
       >
-        {/* <HeroesApp />
-        <Floreria />
-        <Peluqueria />
-        <Buscador />
-        <List /> */}
         <Projects />
       </Grid>
     </Grid>
