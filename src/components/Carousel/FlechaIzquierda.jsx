@@ -4,7 +4,7 @@ import { BsFillArrowLeftSquareFill } from "react-icons/bs";
 
 const FlechaIzquierda = () => {
   return (
-    <Grid sx={{marginRight: {xs: 0, lg:3}, cursor: "pointer"}}>
+    <Grid sx={{marginRight: {xs: 4, lg:3}, cursor: "pointer"}}>
         <BsFillArrowLeftSquareFill fontSize={50} />
     </Grid>
   )

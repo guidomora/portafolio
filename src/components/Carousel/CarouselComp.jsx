@@ -11,11 +11,7 @@ import FlechaDerecha from './FlechaDerecha';
 
 
 const CarouselComp = () => {
-    const one = 1
-    const three = 3
     const win = window.innerWidth
-    
-
     return (
         <Grid >
             <Carousel show={win < 500 ? 1 : 6 } slide={1} transition={0.5} swiping={true} className="carousel" leftArrow={<FlechaIzquierda />} rightArrow={<FlechaDerecha />}>
