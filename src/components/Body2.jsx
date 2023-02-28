@@ -1,10 +1,10 @@
 import { Grid, Typography } from "@mui/material";
 import React from "react";
-import Card1 from "./Cards/Card1";
+import CarouselComp from "./Carousel/CarouselComp";
 
 const Body2 = () => {
   return (
-    <Grid sx={{ marginTop: "50px", marginBottom: "50px" }}>
+    <Grid sx={{ marginTop: "50px" }} id="grid">
       <Grid
         sx={{
           backgroundColor: "primary.main",
@@ -45,8 +45,8 @@ const Body2 = () => {
           </Typography>
         </Grid>
       </Grid>
-      <Grid sx={{ display: "flex", justifyContent: "center", marginTop: -10 }}>
-        <Card1 />
+      <Grid mt={5} mb={6}>
+        <CarouselComp />
       </Grid>
     </Grid>
   );

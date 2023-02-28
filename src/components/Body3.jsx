@@ -1,10 +1,5 @@
 import { Grid, Typography } from "@mui/material";
 import React from "react";
-import Buscador from "./Proyectos/Buscador";
-import Floreria from "./Proyectos/Floreria";
-import HeroesApp from "./Proyectos/HeroesApp";
-import List from "./Proyectos/List";
-import Peluqueria from "./Proyectos/Peluqueria";
 import Projects from "./Proyectos/Projects";
 
 const Body3 = () => {
@@ -12,6 +7,7 @@ const Body3 = () => {
     <Grid marginTop={4} marginBottom={6}>
       <Grid marginBottom={4}>
         <Typography
+        marginTop={4}
           variant="h4"
           sx={{
             fontFamily: "Varela Round",
