@@ -10,7 +10,7 @@ const Footer = () => {
         color={"secondary.main"}
         sx={{ fontWeight: 500, fontFamily: "Varela Round" }}
       >
-        Desarrollado desde 0 por mi
+        Desarrollado desde 0 by Guido
       </Typography>
     </Grid>
   );

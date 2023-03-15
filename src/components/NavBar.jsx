@@ -31,7 +31,7 @@ const NavBar = () => {
             color="secondary"
             sx={{ marginRight: {xs:2, sm: 4, md:8}, fontFamily: "Segoe UI" }}
           ><Link href="#contacto">
-            <Typography variant="p" sx={{ color: "white", marginRight: 1 }}>
+            <Typography variant="p" sx={{ color: "white", marginRight: 1, fontFamily: "Segoe UI" }}>
               
               {" "}
               Contacto

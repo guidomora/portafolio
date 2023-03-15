@@ -12,9 +12,12 @@ import FlechaDerecha from './FlechaDerecha';
 
 const CarouselComp = () => {
     const win = window.innerWidth
+    let cards = 6
+
+    if (win < 500) { cards = 1 } else if (win < 900 && win > 501) { cards = 3 } else if (win < 1100 && win > 901) { cards = 4 } else if (win < 1300 && win > 1101) { cards = 5 }
     return (
         <Grid >
-            <Carousel show={win < 500 ? 1 : 6 } slide={1} transition={0.5} swiping={true} className="carousel" leftArrow={<FlechaIzquierda />} rightArrow={<FlechaDerecha />}>
+            <Carousel show={cards} slide={1} transition={0.5} swiping={true} className="carousel" leftArrow={<FlechaIzquierda />} rightArrow={<FlechaDerecha />}>
                 <Paper
                     sx={{ margin: 2, height: 120, width: 190, display: "flex", flexDirection: "row", justifyContent: "center", flexWrap: "wrap" }}
                     elevation={5}>

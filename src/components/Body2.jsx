@@ -38,9 +38,9 @@ const Body2 = () => {
               marginRight:{xs:5, sm: 8, md: 10}
             }}
           >
-            Soy web developer en camino a dominar el MERN stack. Estudiante de
+            Soy web developer en camino a dominar el MERN stack actualmente. Estudiante de
             desarrollo de software en UADE y siempre aprendiendo cosas nuevas, a
-            través de cursos online o como autodidacta. Me apasiona el mundo de
+            través de cursos online o como autodidacta. Me encanta el mundo de
             la programacion y de poder crear soluciones a problemas.
           </Typography>
         </Grid>
