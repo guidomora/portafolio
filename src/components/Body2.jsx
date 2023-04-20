@@ -19,7 +19,7 @@ const Body2 = () => {
               color: "secondary.main",
               display: "flex",
               justifyContent: "center",
-              fontSize: {xs:17, sm: 20, md: 25},
+              fontSize: {xs:21, sm: 27, md: 38},
             }}
           >
             Hola mi nombre es Guido!
@@ -31,15 +31,15 @@ const Body2 = () => {
               color: "secondary.main",
               display: "flex",
               justifyContent: "center",
-              fontSize: {xs:14, sm: 17, md: 20},
+              fontSize: {xs:16, sm: 19, md: 24},
               textAlign: "center",
               marginTop:{xs:1, md: 2},
               marginLeft:{xs:5, sm: 8, md: 10},
               marginRight:{xs:5, sm: 8, md: 10}
             }}
           >
-            Soy web developer en camino a dominar el MERN stack actualmente. Estudiante de
-            desarrollo de software en UADE y siempre aprendiendo cosas nuevas, a
+            Soy front-end developer, en camino a dominar el MERN stack actualmente. Estudiante de
+            desarrollo de software en UADE y siempre adquiriendo nuevos conocimientos, a
             través de cursos online o como autodidacta. Me encanta el mundo de
             la programacion y de poder crear soluciones a problemas.
           </Typography>
