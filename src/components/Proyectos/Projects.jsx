@@ -3,14 +3,16 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea, Grid } from "@mui/material";
+import { CardActionArea, CircularProgress, Grid } from "@mui/material";
 import { Link } from "react-router-dom";
 import { collection, onSnapshot, query } from "firebase/firestore";
 import { db } from "../../Firebase/Firebase";
 
 const Projects = () => {
 const [proyectos, setProyectos] = useState([])
+const [loading, setLoading] = useState(false)
 
+  
 
 
   useEffect(() => {
@@ -25,10 +27,15 @@ const [proyectos, setProyectos] = useState([])
     });
 
     }
+    setTimeout(() => {
+      setLoading(true)
+    }, 2000);
     obtener()
   }, [])
+   
+  console.log(loading);
+  console.log(proyectos.length);
 
-  console.log(proyectos)
   return (
     <Grid sx={{
       display: "flex",
@@ -37,8 +44,8 @@ const [proyectos, setProyectos] = useState([])
       flexWrap: "wrap",
       margin: 0,
     }}>
-      {proyectos.map((proyecto) => (
-        <Card className="animacion" sx={{ maxWidth: 345, margin: 3, boxShadow: "1px 1px 33px 2px rgba(0,0,0,0.38)" }} key={proyecto.titulo}>
+      {loading ? proyectos.map((proyecto) => (
+        <Card className="animate__animated animate__fadeIn animacion" sx={{ maxWidth: 345, margin: 3, boxShadow: "1px 1px 33px 2px rgba(0,0,0,0.38)" }} key={proyecto.titulo}>
           <CardActionArea>
             <Link to={proyecto.link} className="subrayado" target="_blank">
               <CardMedia
@@ -68,7 +75,8 @@ const [proyectos, setProyectos] = useState([])
             </Link>
           </CardActionArea>
         </Card>
-      ))}
+      )) : <CircularProgress /> }
+      
     </Grid>
   );
 };
