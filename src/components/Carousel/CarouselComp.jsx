@@ -3,7 +3,7 @@ import { Carousel } from '@trendyol-js/react-carousel';
 import { Grid, Paper, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { DiReact, DiJsBadge, DiHtml5, DiCss3, DiBootstrap, DiGit, DiCode } from "react-icons/di";
-import { SiRedux, SiMaterialui, SiNodedotjs, SiMongodb } from "react-icons/si";
+import { SiRedux, SiMaterialui, SiNodedotjs, SiMongodb, SiTypescript } from "react-icons/si";
 import imgVite from "../../assets/vite.png"
 import "./carousel.css"
 import FlechaIzquierda from './FlechaIzquierda';
@@ -34,8 +34,6 @@ const CarouselComp = () => {
                         <Typography sx={{ marginLeft: 1, fontSize: 23 }}>Vite js</Typography>
                     </Box>
                 </Paper>
-
-
                 <Paper
                     sx={{ margin: 2, height: 120, width: 190, display: "flex", flexDirection: "row", justifyContent: "center", flexWrap: "wrap" }}
                     elevation={3}>
@@ -82,6 +80,22 @@ const CarouselComp = () => {
                     >
                         <DiJsBadge fontSize={55} color="#ffeb3b" />
                         <Typography sx={{ marginLeft: 1, fontSize: 23 }}>Javascript</Typography>
+                    </Box>
+                </Paper>
+                <Paper
+                    sx={{ margin: 2, height: 120, width: 190, display: "flex", flexDirection: "row", justifyContent: "center", flexWrap: "wrap" }}
+                    elevation={3}>
+                    <Box
+                        sx={{
+                            display: "flex",
+                            flexDirection: "row",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            margin: 0.5,
+                        }}
+                    >
+                        <SiTypescript fontSize={55} color="#0080FF" />
+                        <Typography sx={{ marginLeft: 1, fontSize: 23 }}>Typescript</Typography>
                     </Box>
                 </Paper>
                 <Paper

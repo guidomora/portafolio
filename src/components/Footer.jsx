@@ -1,7 +1,10 @@
 import { Grid, Typography } from "@mui/material";
 import React from "react";
+import { useSelector } from "react-redux";
 
 const Footer = () => {
+  const { esp } = useSelector(state => state.lang)
+
   return (
     <Grid sx={{ backgroundColor: "#141c3a", height: 100 }}>
       <Typography
@@ -10,7 +13,8 @@ const Footer = () => {
         color={"secondary.main"}
         sx={{ fontWeight: 500, fontFamily: "Varela Round" }}
       >
-        Desarrollado desde 0 by Guido
+        {(esp == true) ?
+          "Desarrollado desde 0 by Guido" : "Developed from scratch by me"}
       </Typography>
     </Grid>
   );

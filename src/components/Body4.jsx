@@ -2,8 +2,12 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { TextField, Button, Grid, Typography, Paper } from "@mui/material";
 import Swal from "sweetalert2";
+import { useSelector } from "react-redux";
 
 const ContactUs = () => {
+  const { esp } = useSelector(state => state.lang)
+
+
   const sweetAlert = () => {
     Swal.fire(
       "Correo enviado exitosamente!",
@@ -64,7 +68,7 @@ const ContactUs = () => {
               fontWeight: 500,
             }}
           >
-            Contacto
+            {(esp == true) ? "Contacto" : "Contact me!"}
           </Typography>
           <Paper
             elevation={3}
@@ -104,12 +108,12 @@ const ContactUs = () => {
                     fontWeight: 600,
                   }}
                 >
-                  Nombre
+                  {(esp == true) ? "Nombre" : "Name"}
                 </Typography>
                 <TextField
                   type="text"
                   name="user_name"
-                  placeholder="Nombre"
+                  placeholder={(esp == true) ? "Nombre" : "Name"}
                   sx={{ width: { xs: 250, sm: 250, md: 320 } }}
                 />
               </Grid>
@@ -123,7 +127,7 @@ const ContactUs = () => {
                   }}
                   className="form-label"
                 >
-                  Escriba aqui su mensaje
+                  {(esp == true) ? "Escriba su mensaje aqui" : "Your message"}
                 </Typography>
                 <TextField
                   name="message"
@@ -140,12 +144,12 @@ const ContactUs = () => {
                     fontFamily: "Varela Round",
                     fontSize: 17,
                     marginBottom: 3,
-                    backgroundColor: "primary.main",
-                    color: "black",
+                    color: "primary.main",
+                    
                     fontWeight: 600,
                   }}
                 >
-                  Enviar
+                   {(esp == true) ? "Enviar" : "Send"}
                 </Button>
               </Grid>
             </form>

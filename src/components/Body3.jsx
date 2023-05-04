@@ -1,8 +1,11 @@
 import { Grid, Typography } from "@mui/material";
 import React from "react";
 import Projects from "./Proyectos/Projects";
+import { useSelector } from "react-redux";
 
 const Body3 = () => {
+  const { esp } = useSelector(state => state.lang)
+
   return (
     <Grid marginTop={4} marginBottom={6}>
       <Grid marginBottom={4}>
@@ -17,7 +20,8 @@ const Body3 = () => {
             fontSize: {xs:20, sm: 25, md: 30},
           }}
         >
-          Mis proyectos
+          {(esp == true) ?
+          "Mis proyectos" : "My projects"}
         </Typography>
       </Grid>
       <Grid

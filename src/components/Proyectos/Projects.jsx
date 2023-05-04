@@ -33,8 +33,6 @@ const [loading, setLoading] = useState(false)
     obtener()
   }, [])
    
-  console.log(loading);
-  console.log(proyectos.length);
 
   return (
     <Grid sx={{

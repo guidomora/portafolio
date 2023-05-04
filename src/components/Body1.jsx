@@ -7,7 +7,7 @@ import "../App.css"
 
 const Body1 = () => {
   return (
-    <Grid>
+    <Grid className="animate__animated animate__fadeIn">
       <Grid>
         <Typography
           variant="h1"
@@ -17,7 +17,7 @@ const Body1 = () => {
             fontSize:{xs:35, sm: 40, md: 50, lg: 70},
           }}
         >
-          Web Developer
+          Front end
         </Typography>
       </Grid>
       <Grid  sx={{
