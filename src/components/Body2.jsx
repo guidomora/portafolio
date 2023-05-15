@@ -25,8 +25,6 @@ const Body2 = () => {
               fontSize: { xs: 21, sm: 27, md: 38 },
             }}
           >
-            {(esp == true) ?
-              "Hola mi nombre es Guido!" : "Hi my name is Guido!"}
           </Typography>
           {(esp == true) ?
             (<Typography

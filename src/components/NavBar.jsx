@@ -12,7 +12,7 @@ const NavBar = () => {
   const { setLang } = useLangStore()
 
   return (
-    <Grid marginBottom="130px">
+    <Grid>
       <AppBar
         position="fixed"
         sx={{
@@ -32,6 +32,7 @@ const NavBar = () => {
         </Grid>
         <Grid
           sx={{
+            marginRight:1,
             display: "flex",
             flexDirection: "row",
             justifyContent: "space-between",
@@ -39,8 +40,8 @@ const NavBar = () => {
           }}
         >
           <button className="buttonsNav2">
-          <Link href="#contacto">
-              <Typography variant="p" sx={{ color: "white", marginRight: 1, fontFamily: "Segoe UI" }}>
+          <Link href="#contacto" sx={{marginLeft:1, textDecoration: "none"}}>
+              <Typography variant="p" sx={{ color: "white", marginRight: 1,}}>
               {(esp == true) ? "Contacto" : "Contact me"}
               </Typography>
             </Link>
