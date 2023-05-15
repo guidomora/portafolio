@@ -17,10 +17,11 @@ const Body1 = () => {
             fontFamily: "Varela Round",
             textAlign: "center",
             fontSize: { xs: 35, sm: 40, md: 50, lg: 60 },
+            marginBottom:{ xs: -10, sm: 0}
           }}
         >
          {(esp == true) ?
-              "Hola mi nombre es Guido!" : "Hi my name is Guido!"}
+              "Hola! soy Guido" : "Hi! I'm Guido"}
         </Typography>
       </Grid>
        <Animation/>
