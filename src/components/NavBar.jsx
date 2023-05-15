@@ -5,6 +5,7 @@ import { DiCodeBadge } from "react-icons/di";
 import useLangStore from "../hooks/useLangStore";
 import TranslateIcon from '@mui/icons-material/Translate';
 import { useSelector } from "react-redux";
+import "../css/Buttons.css"
 
 const NavBar = () => {
   const { esp } = useSelector(state => state.lang)
@@ -25,7 +26,9 @@ const NavBar = () => {
       >
         <Grid display={"flex"} alignItems={"center"}>
           <DiCodeBadge className="code" />
-          <Button onClick={setLang} variant="outlined" color={"secondary"} endIcon={<TranslateIcon />}>English</Button>
+          <button onClick={setLang} className="buttonsNav">
+            English
+          </button>
         </Grid>
         <Grid
           sx={{
@@ -35,17 +38,13 @@ const NavBar = () => {
             alignItems: "center",
           }}
         >
-          <Button
-            variant="outlined"
-            color="secondary"
-            sx={{ marginRight: { xs: 2, sm: 4, md: 8 }, fontFamily: "Segoe UI" }}
-          ><Link href="#contacto">
+          <button className="buttonsNav2">
+          <Link href="#contacto">
               <Typography variant="p" sx={{ color: "white", marginRight: 1, fontFamily: "Segoe UI" }}>
-              {(esp == true) ? "Contacto" : "Contact"}
+              {(esp == true) ? "Contacto" : "Contact me"}
               </Typography>
             </Link>
-            <ConnectWithoutContactIcon sx={{ fontSize: 35 }} />
-          </Button>
+          </button>
         </Grid>
       </AppBar>
     </Grid>

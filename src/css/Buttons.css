@@ -1,0 +1,94 @@
+.buttonsNav {
+    width: 8em;
+    position: relative;
+    height: 3.4em;
+    border: 3px ridge #149CEA;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    transition: 1s;
+    border-radius: 0.3em;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .buttonsNav::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #480CA8;
+    transition: 0.5s;
+    transform-origin: center;
+  }
+  
+  .buttonsNav::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #480CA8;
+    transition: 0.5s;
+  }
+  
+  .buttonsNav:hover::before, .buttonsNav:hover::after {
+    transform: scale(0)
+  }
+  
+  .buttonsNav:hover {
+    box-shadow: inset 0px 0px 25px #1479EA;
+  }
+
+  /* Contacto */
+
+
+  .buttonsNav2 {
+    width: 8em;
+    position: relative;
+    height: 3.4em;
+    border: 3px ridge #149CEA;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    transition: 1s;
+    border-radius: 0.3em;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .buttonsNav2::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #480CA8;
+    transition: 0.5s;
+    transform-origin: center;
+  }
+  
+  .buttonsNav2::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 70%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: #480CA8;
+    transition: 0.5s;
+  }
+  
+  .buttonsNav2:hover::before, .buttonsNav2:hover::after {
+    transform: scale(0)
+  }
+  
+  .buttonsNav2:hover {
+    box-shadow: inset 0px 0px 25px #1479EA;
+  }

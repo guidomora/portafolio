@@ -3,6 +3,8 @@ import emailjs from "@emailjs/browser";
 import { TextField, Button, Grid, Typography, Paper } from "@mui/material";
 import Swal from "sweetalert2";
 import { useSelector } from "react-redux";
+import "../App.css"
+import "../css/contactForm.css"
 
 const ContactUs = () => {
   const { esp } = useSelector(state => state.lang)
@@ -47,16 +49,16 @@ const ContactUs = () => {
     >
       <Grid>
         <Grid
-          
+         className="card"
           sx={{
             backgroundColor: "primary.main",
             borderRadius: 3,
-            height:{ xs: 600, sm: 670, md: 670 } ,
+            height: { xs: 600, sm: 670, md: 670 },
             width: { xs: 350, sm: 600, md: 600 },
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            padding:{xs: 5, sm: 7, md: 9}
+            padding: { xs: 5, sm: 7, md: 9 }
           }}
         >
           <Typography
@@ -77,7 +79,7 @@ const ContactUs = () => {
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              
+
             }}
           >
             <form ref={form} onSubmit={sendEmail}>
@@ -136,21 +138,16 @@ const ContactUs = () => {
                 />
               </Grid>
               <Grid margin={4}>
-                <Button
+                <button
+                  className="contact-btn"
                   onClick={sweetAlert}
-                  variant="outlined"
                   type="submmit"
-                  sx={{
-                    fontFamily: "Varela Round",
-                    fontSize: 17,
-                    marginBottom: 3,
-                    color: "primary.main",
-                    
-                    fontWeight: 600,
-                  }}
                 >
-                   {(esp == true) ? "Enviar" : "Send"}
-                </Button>
+                  <span class="shadow"></span>
+                  <span class="edge"></span>
+                  <span class="front text"> {(esp == true) ? "Enviar" : "Send"}
+                  </span>
+                </button>
               </Grid>
             </form>
           </Paper>
