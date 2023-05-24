@@ -7,11 +7,12 @@ import { CardActionArea, CircularProgress, Grid } from "@mui/material";
 import { Link } from "react-router-dom";
 import { collection, onSnapshot, query } from "firebase/firestore";
 import { db } from "../../Firebase/Firebase";
+import { useSelector } from "react-redux";
 
 const Projects = () => {
 const [proyectos, setProyectos] = useState([])
 const [loading, setLoading] = useState(false)
-
+const { esp } = useSelector(state => state.lang)
   
 
 
@@ -29,7 +30,7 @@ const [loading, setLoading] = useState(false)
     }
     setTimeout(() => {
       setLoading(true)
-    }, 2000);
+    }, 1000);
     obtener()
   }, [])
    
@@ -60,14 +61,15 @@ const [loading, setLoading] = useState(false)
                   component="div"
                   sx={{ fontFamily: "Varela Round" }}
                 >
-                  {proyecto.titulo}
+                  {esp ? proyecto.titulo : proyecto.title}
                 </Typography>
                 <Typography
                   variant="body2"
                   color="text.secondary"
                   sx={{ fontFamily: "Varela Round" }}
                 >
-                  {proyecto.descripcion}
+                  {esp ? proyecto.descripcion : proyecto.description}
+                  
                 </Typography>
               </CardContent>
             </Link>
