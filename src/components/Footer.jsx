@@ -6,7 +6,7 @@ const Footer = () => {
   const { esp } = useSelector(state => state.lang)
 
   return (
-    <Grid sx={{ backgroundColor: "#141c3a", height: 100 }}>
+    <Grid sx={{ backgroundColor: "primary.main", height: 100 }}>
       <Typography
         paddingTop={7}
         textAlign={"center"}

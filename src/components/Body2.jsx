@@ -58,7 +58,7 @@ const Body2 = () => {
                 marginLeft: { xs: 5, sm: 8, md: 10 },
                 marginRight: { xs: 5, sm: 8, md: 10 }
               }}>
-              I'm a Front-End Developer, on my way to mastering the MERN stack. Software development student at UADE University and always acquiring new knowledge, through
+              I'm a Front-End Developer, on my way to mastering the MERN stack. Software development student at UADE University and always acquiring new knowledge,
               through online courses or as a self-taught. I love the world of programming and being able to create solutions to problems.</Typography>}
         </Grid>
       </Grid>
