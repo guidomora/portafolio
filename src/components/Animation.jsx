@@ -9,9 +9,9 @@ const Animation = () => {
             display: "flex",
             justifyContent: "center",
         }}>
-            <div class="loader"></div>
-            <div class="loader"></div>
-            <div class="loader"></div>
+            <div className="loader"></div>
+            <div className="loader"></div>
+            <div className="loader"></div>
         </Grid>
     )
 }

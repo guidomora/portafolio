@@ -5,7 +5,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea, CircularProgress, Grid } from "@mui/material";
 import { Link } from "react-router-dom";
-import { collection, onSnapshot, query } from "firebase/firestore";
+import { collection, onSnapshot, orderBy, query } from "firebase/firestore";
 import { db } from "../../Firebase/Firebase";
 import { useSelector } from "react-redux";
 
@@ -18,7 +18,7 @@ const { esp } = useSelector(state => state.lang)
 
   useEffect(() => {
     const obtener = async () => {
-      const q = query(collection(db, "proyectos"));
+      const q = query(collection(db, "proyectos"), orderBy("id", "desc"));
     const unsubscribe = onSnapshot(q, (querySnapshot) => {
       const docs = [];
       querySnapshot.forEach((doc) => {
