@@ -6,6 +6,11 @@ import { useSelector } from "react-redux";
 import "../App.css"
 import "../css/contactForm.css"
 import "../css/Buttons.css"
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+
+
+AOS.init();
 
 const ContactUs = () => {
   const { esp } = useSelector(state => state.lang)
@@ -42,6 +47,7 @@ const ContactUs = () => {
   };
 
   return (
+    <div data-aos="zoom-in">
     <Grid sx={{
       height: { xs: 530, sm: 540, md: 550 },
       width: { xs: 350, sm: 550, md: 550 },
@@ -171,6 +177,8 @@ const ContactUs = () => {
         </Grid>
       </div>
     </Grid>
+    </div>
+    
 
   );
 };

@@ -10,22 +10,22 @@ import { db } from "../../Firebase/Firebase";
 import { useSelector } from "react-redux";
 
 const Projects = () => {
-const [proyectos, setProyectos] = useState([])
-const [loading, setLoading] = useState(false)
-const { esp } = useSelector(state => state.lang)
-  
+  const [proyectos, setProyectos] = useState([])
+  const [loading, setLoading] = useState(false)
+  const { esp } = useSelector(state => state.lang)
+
 
 
   useEffect(() => {
     const obtener = async () => {
       const q = query(collection(db, "proyectos"), orderBy("id", "desc"));
-    const unsubscribe = onSnapshot(q, (querySnapshot) => {
-      const docs = [];
-      querySnapshot.forEach((doc) => {
-        docs.push({ ...doc.data() });
+      const unsubscribe = onSnapshot(q, (querySnapshot) => {
+        const docs = [];
+        querySnapshot.forEach((doc) => {
+          docs.push({ ...doc.data() });
+        });
+        setProyectos(docs);
       });
-      setProyectos(docs);
-    });
 
     }
     setTimeout(() => {
@@ -33,7 +33,7 @@ const { esp } = useSelector(state => state.lang)
     }, 1000);
     obtener()
   }, [])
-   
+
 
   return (
     <Grid sx={{
@@ -44,39 +44,43 @@ const { esp } = useSelector(state => state.lang)
       margin: 0,
     }}>
       {loading ? proyectos.map((proyecto) => (
-        <Card className="animate__animated animate__fadeIn animacion" sx={{ maxWidth: 345, margin: 3, boxShadow: "1px 1px 33px 2px rgba(0,0,0,0.38)" }} key={proyecto.titulo}>
-          <CardActionArea>
-            <Link to={proyecto.link} className="subrayado" target="_blank">
-              <CardMedia
-                component="img"
-                height="140"
-                image={proyecto.imagen}
-                alt={proyecto.titulo}
-                className="heroes"
-              />
-              <CardContent>
-                <Typography
-                  gutterBottom
-                  variant="h5"
-                  component="div"
-                  sx={{ fontFamily: "Varela Round" }}
-                >
-                  {esp ? proyecto.titulo : proyecto.title}
-                </Typography>
-                <Typography
-                  variant="body2"
-                  color="text.secondary"
-                  sx={{ fontFamily: "Varela Round" }}
-                >
-                  {esp ? proyecto.descripcion : proyecto.description}
-                  
-                </Typography>
-              </CardContent>
-            </Link>
-          </CardActionArea>
-        </Card>
-      )) : <CircularProgress /> }
-      
+        <div data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom">
+          <Card sx={{ maxWidth: 345, margin: 3, boxShadow: "1px 1px 33px 2px rgba(0,0,0,0.38)" }} key={proyecto.titulo}>
+            <CardActionArea>
+              <Link to={proyecto.link} className="subrayado" target="_blank">
+                <CardMedia
+                  component="img"
+                  height="140"
+                  image={proyecto.imagen}
+                  alt={proyecto.titulo}
+                  className="heroes"
+                />
+                <CardContent>
+                  <Typography
+                    gutterBottom
+                    variant="h5"
+                    component="div"
+                    sx={{ fontFamily: "Varela Round" }}
+                  >
+                    {esp ? proyecto.titulo : proyecto.title}
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="text.secondary"
+                    sx={{ fontFamily: "Varela Round" }}
+                  >
+                    {esp ? proyecto.descripcion : proyecto.description}
+
+                  </Typography>
+                </CardContent>
+              </Link>
+            </CardActionArea>
+          </Card>
+        </div>
+
+      )) : <CircularProgress />}
+
     </Grid>
   );
 };
