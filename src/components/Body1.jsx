@@ -8,8 +8,11 @@ import { useSelector } from "react-redux";
 
 const Body1 = () => {
   const { esp } = useSelector(state => state.lang)
+
+  const ancho = window.innerWidth
+
   return (
-    <Grid className="animate__animated animate__fadeIn" sx={{marginTop:10}}>
+    <Grid className="animate__animated animate__fadeIn" sx={{marginTop: (ancho > 800 && ancho < 960) ? 30 : 10 }}>
       <Grid>
         <Typography
           variant="h1"
