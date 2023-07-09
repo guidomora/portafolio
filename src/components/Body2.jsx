@@ -11,7 +11,7 @@ const Body2 = () => {
       <Grid
         sx={{
           backgroundColor: "primary.main",
-          height: "300px",
+          height: {xs: 250, sm:250 }
         }}
       >
         <Grid paddingTop={6}>
