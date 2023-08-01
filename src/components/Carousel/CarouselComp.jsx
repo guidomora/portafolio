@@ -3,7 +3,7 @@ import { Carousel } from '@trendyol-js/react-carousel';
 import { Grid, Paper, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { DiReact, DiJsBadge, DiHtml5, DiCss3, DiBootstrap, DiGit } from "react-icons/di";
-import { SiRedux, SiMaterialui, SiNodedotjs, SiMongodb, SiTypescript, SiPostman } from "react-icons/si";
+import { SiRedux, SiMaterialui, SiNodedotjs, SiMongodb, SiTypescript, SiPostman, SiMicrosoftsqlserver } from "react-icons/si";
 import {TbBrandNextjs} from "react-icons/tb"
 import imgVite from "../../assets/vite.png"
 import "./carousel.css"
@@ -49,6 +49,8 @@ const CarouselComp = () => {
                 <CarouselIcons icon={<DiHtml5 fontSize={55} color="#ff4d00" />} nameTec="HTML" />
                 <CarouselIcons icon={<DiCss3 fontSize={55} color="#196fff" />} nameTec="CSS" />
                 <CarouselIcons icon={<DiBootstrap fontSize={55} color="#8400ff" />} nameTec="Bootstrap" />
+                <CarouselIcons icon={<SiMicrosoftsqlserver fontSize={48} color="#d63105" />} nameTec="SQL Server" />
+
             </Carousel>
         </Grid>
     )
