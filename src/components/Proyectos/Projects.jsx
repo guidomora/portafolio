@@ -61,14 +61,14 @@ const Projects = () => {
                     gutterBottom
                     variant="h5"
                     component="div"
-                    sx={{ fontFamily: "Varela Round" }}
+                    sx={{ fontFamily: "Varela Round", textTransform:"capitalize" }}
                   >
                     {esp ? proyecto.titulo : proyecto.title}
                   </Typography>
                   <Typography
                     variant="body2"
                     color="text.secondary"
-                    sx={{ fontFamily: "Varela Round" }}
+                    sx={{ fontFamily: "Varela Round", textTransform:"none"  }}
                   >
                     {esp ? proyecto.descripcion : proyecto.description}
 
