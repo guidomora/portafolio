@@ -7,7 +7,7 @@ const Animation = () => {
         <Grid sx={{
             height: 500,
             display: "flex",
-            justifyContent: "center",
+            justifyContent: "center"
         }}>
             <div className="loader"></div>
             <div className="loader"></div>

@@ -12,7 +12,7 @@ const Body1 = () => {
   const ancho = window.innerWidth
 
   return (
-    <Grid className="animate__animated animate__fadeIn" sx={{marginTop: (ancho > 800 && ancho < 960) ? 30 : 10 }}>
+    <Grid className="animate__animated animate__fadeIn" sx={{marginTop: (ancho > 800 && ancho < 960) ? 30 : 8 }}>
       <Grid>
         <Typography
           variant="h1"
@@ -20,7 +20,8 @@ const Body1 = () => {
             fontFamily: "Varela Round",
             textAlign: "center",
             fontSize: { xs: 35, sm: 40, md: 50, lg: 60 },
-            marginBottom:{ xs: -10, sm: 0}
+            marginBottom:{ xs: -10, sm: 0},
+            paddingTop:3
           }}
         >
          {(esp == true) ?
@@ -28,6 +29,9 @@ const Body1 = () => {
         </Typography>
       </Grid>
        <Animation/>
+       <Grid height={100}>
+
+       </Grid>
     </Grid>
   );
 };

@@ -7,7 +7,7 @@ const Body2 = () => {
   const { esp } = useSelector(state => state.lang)
 
   return (
-    <Grid sx={{ marginTop: "50px" }} id="grid" className="animate__animated animate__fadeIn">
+    <Grid  id="grid" className="animate__animated animate__fadeIn">
       <Grid
         sx={{
           backgroundColor: "primary.main",
