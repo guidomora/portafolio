@@ -41,8 +41,8 @@ const Body2 = () => {
                 marginRight: { xs: 5, sm: 8, md: 10 }
               }}
             >
-              Soy Front-end developer, en camino a dominar el MERN stack. Estudiante de
-              desarrollo de software en UADE y siempre adquiriendo nuevos conocimientos, a
+              Estudiante de
+              desarrollo de software en UADE y en camino a ser full-stack developer,siempre adquiriendo nuevos conocimientos a
               través de cursos online o como autodidacta. Me encanta el mundo de
               la programacion y de poder crear soluciones a problemas.
             </Typography>) : <Typography
@@ -58,7 +58,7 @@ const Body2 = () => {
                 marginLeft: { xs: 5, sm: 8, md: 10 },
                 marginRight: { xs: 5, sm: 8, md: 10 }
               }}>
-              I'm a Front-End Developer, on my way to mastering the MERN stack. Software development student at UADE University and always acquiring new knowledge,
+              Software development student at UADE University and on the way to become a full-stack developer, always acquiring new knowledge 
               through online courses or as a self-taught. I love the world of programming and being able to create solutions to problems.</Typography>}
         </Grid>
       </Grid>
