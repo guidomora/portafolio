@@ -7,17 +7,20 @@ const Body3 = () => {
   const { esp } = useSelector(state => state.lang)
 
   return (
-    <Grid marginTop={4} marginBottom={6}>
+    <Grid marginTop={4} marginBottom={6} id={'projects'}>
       <Grid marginBottom={4}>
         <Typography
         marginTop={4}
           variant="h4"
           sx={{
-            fontFamily: "Varela Round",
-            color: "black",
+            background: "linear-gradient(180deg,#fff 0%,rgba(255,255,255,.7) 100%)",
+            WebkitBackgroundClip: "text",
+            color: "transparent",
+            fontFamily: "Montserrat, sans-serif",
+            fontWeight: 600,
             display: "flex",
             justifyContent: "center",
-            fontSize: {xs:20, sm: 25, md: 30},
+            fontSize: {xs:25, sm: 30, md: 50},
           }}
         >
           {(esp == true) ?

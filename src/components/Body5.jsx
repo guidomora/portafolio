@@ -13,15 +13,15 @@ const Body5 = () => {
         marginBottom={-5}
         sx={{
           width: { xs:150, sm:200, md: 200},
-          backgroundColor: "#b8d0eb",
+          backgroundColor: 'primary.main',
           height: { xs:75, sm:100, md: 100},
-          border: 2,
-          borderColor: "black",
+          border:"solid 1px rgba(137, 82, 253, 0.5)",
           borderRadius: 5,
           display: "flex",
           flexDirection: "row",
           justifyContent: "center",
           alignItems: "center",
+          boxShadow: "0px 0px 20px 0px rgba(137, 82, 253, 0.75)"
         }}
       >
         <Grid margin={2}>

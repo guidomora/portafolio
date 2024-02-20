@@ -7,11 +7,11 @@ const Body2 = () => {
   const { esp } = useSelector(state => state.lang)
 
   return (
-    <Grid  id="grid" className="animate__animated animate__fadeIn">
+    <Grid id="grid" className="animate__animated animate__fadeIn" sx={{backgroundColor:"primary.main"}}>
       <Grid
         sx={{
           backgroundColor: "primary.main",
-          height: {xs: 250, sm:250 }
+          height: { xs: 250, sm: 250 }
         }}
       >
         <Grid paddingTop={6}>
@@ -19,7 +19,7 @@ const Body2 = () => {
             variant="h2"
             sx={{
               fontFamily: "Varela Round",
-              color: "secondary.main",
+              color: "primary.third",
               display: "flex",
               justifyContent: "center",
               fontSize: { xs: 21, sm: 27, md: 38 },
@@ -31,7 +31,7 @@ const Body2 = () => {
               variant="h3"
               sx={{
                 fontFamily: "Varela Round",
-                color: "secondary.main",
+                color: "primary.third",
                 display: "flex",
                 justifyContent: "center",
                 fontSize: { xs: 16, sm: 19, md: 24 },
@@ -41,15 +41,14 @@ const Body2 = () => {
                 marginRight: { xs: 5, sm: 8, md: 10 }
               }}
             >
-              Estudiante de
-              desarrollo de software en UADE y en camino a ser full-stack developer,siempre adquiriendo nuevos conocimientos a
-              través de cursos online o como autodidacta. Me encanta el mundo de
-              la programacion y de poder crear soluciones a problemas.
+              Soy estudiante de desarrollo de software en UADE.
+              Siempre estoy sumando conocimientos, ya sea con cursos online o de forma autodidacta.
+              Me encanta el mundo de la programación y disfruto crear soluciones ingeniosas para resolver problemas.
             </Typography>) : <Typography
               variant="h3"
               sx={{
                 fontFamily: "Varela Round",
-                color: "secondary.main",
+                color: "primary.third",
                 display: "flex",
                 justifyContent: "center",
                 fontSize: { xs: 16, sm: 19, md: 24 },
@@ -58,8 +57,10 @@ const Body2 = () => {
                 marginLeft: { xs: 5, sm: 8, md: 10 },
                 marginRight: { xs: 5, sm: 8, md: 10 }
               }}>
-              Software development student at UADE University and on the way to become a full-stack developer, always acquiring new knowledge 
-              through online courses or as a self-taught. I love the world of programming and being able to create solutions to problems.</Typography>}
+
+              I am a software development student at UADE.
+              Always adding knowledge, whether with online courses or self-taught.
+              In love with the programming world and enjoy creating ingenious solutions to solve problems.</Typography>}
         </Grid>
       </Grid>
       <Grid mt={5} mb={6}>

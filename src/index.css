@@ -1,0 +1,24 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #040116 !important;
+    scroll-behavior: smooth;
+}
+
+.violetTexture {
+    width: 100%;
+    height: 700px;
+}
+
+
+@media (max-width: 768px) {
+    .violetTexture {
+        height: 400px;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .violetTexture {
+        height: 300px;
+    }
+}

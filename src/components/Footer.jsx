@@ -6,11 +6,12 @@ const Footer = () => {
   const { esp } = useSelector(state => state.lang)
 
   return (
-    <Grid sx={{ backgroundColor: "primary.main", height: 100 }}>
+    <Grid sx={{ backgroundColor: "primary.main", height: 100, borderTop:"solid 1px rgba(137, 82, 253, 0.3)",
+    boxShadow: "0px 0px 55px 0px rgba(137, 82, 253, 0.75)" }}>
       <Typography
         paddingTop={7}
         textAlign={"center"}
-        color={"secondary.main"}
+        color={"primary.third"}
         sx={{ fontWeight: 500, fontFamily: "Varela Round" }}
       >
         {(esp == true) ?

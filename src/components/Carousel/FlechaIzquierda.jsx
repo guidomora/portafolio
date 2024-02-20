@@ -1,11 +1,11 @@
 import { Grid } from '@mui/material';
 import React from 'react'
-import { BsFillArrowLeftSquareFill } from "react-icons/bs";
+import { MdKeyboardArrowLeft } from "react-icons/md";
 
 const FlechaIzquierda = () => {
   return (
     <Grid sx={{marginRight: {xs: 4, lg:3}, cursor: "pointer"}}>
-        <BsFillArrowLeftSquareFill fontSize={50} />
+        <MdKeyboardArrowLeft fontSize={50} style={{color:'white'}}/>
     </Grid>
   )
 }

@@ -4,7 +4,8 @@ import { red } from "@mui/material/colors";
 export const myTheme =  createTheme({
     palette: {
         primary: {
-            main:"#141c3a"
+            main:"#040116",
+            third:'#efedfdb3' // violeta muy clarito clarito
         },
         secondary: {
             main:"#ffffff"
@@ -15,11 +16,11 @@ export const myTheme =  createTheme({
         error: {
             main: red.A400
         },
-        typography:{
-            fontFamily: [
-                'Varela Round',
-            ]
-        }
+    },
+    typography:{
+        fontFamily: [
+            'Instrument Sans',
+        ]
     }
 })
 

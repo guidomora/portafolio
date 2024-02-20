@@ -1,10 +1,10 @@
 import React from 'react'
-import { BsFillArrowRightSquareFill } from "react-icons/bs";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 const FlechaDerecha = () => {
   return (
     <div style={{cursor: "pointer"}}>
-        <BsFillArrowRightSquareFill fontSize={50} />
+        <MdKeyboardArrowRight fontSize={50} style={{color:'white'}}/>
     </div>
   )
 }

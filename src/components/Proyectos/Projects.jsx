@@ -44,9 +44,10 @@ const Projects = () => {
       margin: 0,
     }}>
       {loading ? proyectos.map((proyecto) => (
-        <div data-aos="fade-up"
+        <div data-aos="fade-up" key={proyecto.titulo}
           data-aos-anchor-placement="center-bottom">
-          <Card sx={{ maxWidth: 345, margin: 3, boxShadow: "1px 1px 33px 2px rgba(0,0,0,0.38)" }} key={proyecto.titulo}>
+          <Card sx={{ maxWidth: 345, margin: 3, boxShadow: "0px 0px 55px 0px rgba(137, 82, 253, 0.4)", 
+          backgroundColor:"primary.main", border:"solid 1px rgba(137, 82, 253, 0.3)" }} key={proyecto.titulo}>
             <CardActionArea>
               <Link to={proyecto.link} className="subrayado" target="_blank">
                 <CardMedia
@@ -61,14 +62,17 @@ const Projects = () => {
                     gutterBottom
                     variant="h5"
                     component="div"
-                    sx={{ fontFamily: "Varela Round", textTransform:"capitalize" }}
+                    sx={{ fontFamily: "Montserrat, sans-serif", textTransform:"capitalize",background: "linear-gradient(90.01deg,#e59cff .01%,#ba9cff 50.01%,#9cb2ff 100%),linear-gradient(180deg,rgba(255,255,255,.4) 0%,rgba(255,255,255,.28) 100%)",
+                    WebkitBackgroundClip: "text",
+                    color: "transparent", }}
                   >
                     {esp ? proyecto.titulo : proyecto.title}
                   </Typography>
                   <Typography
                     variant="body2"
-                    color="text.secondary"
-                    sx={{ fontFamily: "Varela Round", textTransform:"none"  }}
+                    color="primary.third"
+                    fontWeight={300}
+                    sx={{ fontFamily: "Montserrat, sans-serif", textTransform:"none"  }}
                   >
                     {esp ? proyecto.descripcion : proyecto.description}
 

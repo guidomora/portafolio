@@ -54,7 +54,8 @@ const ContactUs = () => {
       margin: "auto",
       backgroundColor: "#141c3a",
       borderRadius: 5,
-      zIndex: 1
+      zIndex: 1,
+      boxShadow: "0 0px 15px rgba(155, 178, 255, 0.5)"
     }}>
       <div className="tools">
         <div className="circle">
@@ -86,7 +87,7 @@ const ContactUs = () => {
                 sx={{
                   fontFamily: "Varela Round",
                   fontSize: 24,
-                  color: "white",
+                  color: "primary.third",
                   fontWeight: 500,
                 }}
               >
@@ -108,7 +109,7 @@ const ContactUs = () => {
                         fontSize: 17,
                         marginTop: 2,
                         fontWeight: 500,
-                        color: "white"
+                        color: "primary.third"
                       }}
                     >
                       Email
@@ -118,6 +119,7 @@ const ContactUs = () => {
                       type="text"
                       name="user_email"
                       placeholder="email@example.com"
+                      size="small"
                       sx={{ width: { xs: 250, sm: 280, md: 320 }, backgroundColor: "white", borderRadius: 1 }}
                     />
                   </Grid>
@@ -128,7 +130,7 @@ const ContactUs = () => {
                         fontSize: 17,
                         marginTop: 2,
                         fontWeight: 500,
-                        color: "white"
+                        color: "primary.third"
                       }}
                     >
                       {(esp == true) ? "Nombre" : "Name"}
@@ -137,6 +139,7 @@ const ContactUs = () => {
                       color="third"
                       type="text"
                       name="user_name"
+                      size="small"
                       placeholder={(esp == true) ? "Nombre" : "Name"}
                       sx={{ width: { xs: 250, sm: 280, md: 320 }, backgroundColor: "white", borderRadius: 1 }}
                     />
@@ -148,7 +151,7 @@ const ContactUs = () => {
                         fontSize: 17,
                         marginTop: 2,
                         fontWeight: 500,
-                        color: "white"
+                        color: "primary.third"
                       }}
                       className="form-label"
                     >
