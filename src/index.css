@@ -13,12 +13,14 @@ body {
 @media (max-width: 768px) {
     .violetTexture {
         height: 400px;
+        width: 120%;
     }
 }
 
 
-@media (max-width: 360px) {
+@media (max-width: 450px) {
     .violetTexture {
-        height: 300px;
+        height: 350px;
+        width: 150%;
     }
 }

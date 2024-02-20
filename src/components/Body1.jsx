@@ -12,7 +12,7 @@ const Body1 = () => {
   const ancho = window.innerWidth
 
   return (
-    <Grid className="animate__animated animate__fadeIn" sx={{backgroundColor:"#040116", marginTop: (ancho > 800 && ancho < 960) ? 30 : 8 }}>
+    <Grid className="animate__animated animate__fadeIn" sx={{overflow:'hidden', backgroundColor:"#040116", marginTop: (ancho > 800 && ancho < 960) ? 30 : 8 }}>
       <Grid>
         <Typography
           variant="h1"

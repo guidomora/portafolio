@@ -32,7 +32,7 @@ const NavBar = () => {
           boxShadow: "0px 0px 55px 0px rgba(137, 82, 253, 0.75)", 
           display: "flex",
           flexDirection: "row",
-          justifyContent: "space-between",
+          justifyContent: {xs:'space-evenly',sm:"space-between"},
           height: 70,
           width: "100%",
           backgroundColor: "black",
