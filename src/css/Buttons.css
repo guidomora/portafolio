@@ -147,3 +147,31 @@
     -moz-transition: box-shadow 0.2s ease-in;
     transition: box-shadow 0.2s ease-in;
   }
+
+
+  /* media */
+
+  @media (max-width: 768px) {
+    .buttonsNav {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  
+    button {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+}
+
+
+@media (max-width: 450px) {
+  .buttonsNav {
+    padding: 7px 15px;
+    font-size: 12px;
+  }
+
+  button {
+    padding: 7px 15px;
+    font-size: 12px;
+  }
+}
