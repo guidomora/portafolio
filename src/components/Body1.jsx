@@ -17,12 +17,15 @@ const Body1 = () => {
         <Typography
           variant="h1"
           sx={{
+            background: "linear-gradient(180deg,#fff 0%,rgba(255,255,255,.7) 100%)",
             fontFamily: "Montserrat",
+            WebkitBackgroundClip: "text",
+            color: "transparent",
+            fontWeight: 600,
             textAlign: "center",
             fontSize: { xs: 35, sm: 40, md: 50, lg: 60 },
             marginBottom:{ xs: -10, sm: -10},
             paddingTop:10,
-            color: "white",
             fontWeight: "500",
             zIndex: 1,
             position: "relative",
