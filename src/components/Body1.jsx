@@ -26,7 +26,6 @@ const Body1 = () => {
             fontSize: { xs: 35, sm: 40, md: 50, lg: 60 },
             marginBottom:{ xs: -10, sm: -10},
             paddingTop:10,
-            fontWeight: "500",
             zIndex: 1,
             position: "relative",
           }}

@@ -19,7 +19,7 @@ AOS.init();
 const TWEEN_FACTOR_BASE = 0.2
 
 const LatestProyect = (props) => {
-    const { slides, options } = props
+    const { options } = props
     const [emblaRef, emblaApi] = useEmblaCarousel(options)
     const tweenFactor = useRef(0)
     const tweenNodes = useRef([])

@@ -1,4 +1,5 @@
 .embla {
+  overflow: unset;
     background-color: #040116;
     max-width: 100%;
     margin: auto;
@@ -121,3 +122,21 @@
     object-fit: cover;
   }
   
+  /* Mobile */
+
+  @media (max-width: 1024px) {
+    .embla {
+      overflow: hidden;
+      --slide-height: 100%;
+      --slide-size: 100%;
+    }
+    .embla__slide__img {
+      object-fit: contain;
+    }
+
+    .embla__controls {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+    }
+}

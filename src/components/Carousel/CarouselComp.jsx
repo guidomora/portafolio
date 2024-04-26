@@ -20,22 +20,6 @@ const CarouselComp = () => {
     return (
         <Grid sx={{backgroundColor:'primary.main'}} >
             <Carousel show={cards} slide={1} transition={0.5} swiping={true} className="carousel" leftArrow={<FlechaIzquierda />} rightArrow={<FlechaDerecha />}>
-                {/* <Paper
-                    sx={{ margin: 2, height: 120, width: 190, display: "flex", flexDirection: "row", justifyContent: "center", flexWrap: "wrap" }}
-                    elevation={5}>
-                    <Box
-                        sx={{
-                            display: "flex",
-                            flexDirection: "row",
-                            justifyContent: "center",
-                            alignItems: "center",
-                            margin: 0.5,
-                        }}
-                    >
-                        <img src={imgVite} alt="vite" className="vite" />
-                        <Typography sx={{ marginLeft: 1, fontSize: 23 }}>Vite js</Typography>
-                    </Box>
-                </Paper> */}
                 <CarouselIcons icon={<SiVite fontSize={55} color="#9382ff" />} nameTec="Vite js" />
                 <CarouselIcons icon={<DiReact fontSize={55} color="#9382ff" className="rotating" />} nameTec="React Js" />
                 <CarouselIcons icon={<TbBrandNextjs fontSize={55} color="#9382ff" />} nameTec="Next Js" />

@@ -2,20 +2,33 @@ import { Box, Grid, Typography } from "@mui/material";
 import Projects from "./Proyectos/Projects";
 import { useSelector } from "react-redux";
 import LatestProyect from "./Proyectos/LatestProyect";
+import { useEffect, useState } from "react";
+import LatestMobile from "./Proyectos/LatestMobile";
 
 const Body3 = () => {
   const { esp } = useSelector(state => state.lang)
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    // Remueve el listener de resize al desmontar el componente
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const OPTIONS = { dragFree: true, loop: true }
-  const SLIDE_COUNT = 5
-  const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
   return (
     <Grid>
       <Box width={"100%"} display={"flex"} alignItems={'center'} flexDirection={"column"}>
         <Typography
-          marginBottom={5}
-          marginTop={4}
           variant="h4"
           sx={{
             background: "linear-gradient(180deg,#fff 0%,rgba(255,255,255,.7) 100%)",
@@ -26,13 +39,16 @@ const Body3 = () => {
             display: "flex",
             justifyContent: "center",
             fontSize: { xs: 25, sm: 30, md: 50 },
+            mt:{xs:0, md:5},
+            mb:{xs:0, md:5}
           }}
         >
           {(esp == true) ?
             "Último trabajo" : "Latest work"}
         </Typography>
-        <Box width={"80%"}>
-          <LatestProyect slides={SLIDES} options={OPTIONS} />
+        <Box sx={{width:{xs:'90%', lg:'80%'}}}>
+          {windowWidth <= 1024 ? <LatestMobile options={OPTIONS} /> :
+            <LatestProyect options={OPTIONS} />}
         </Box>
       </Box>
       <Grid marginTop={4} marginBottom={6} id={'projects'}>
