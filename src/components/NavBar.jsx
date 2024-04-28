@@ -39,9 +39,8 @@ const NavBar = () => {
         }}
       >
         <Grid display={"flex"} alignItems={"center"} marginLeft={2}>
-          {/* <DiCodeBadge className="code" /> */}
           <button onClick={setLang} className="buttonsNav">
-            English
+            {(esp == true) ? "English" : "Español"}
           </button>
         </Grid>
         <Grid display={"flex"} alignItems={"center"} marginLeft={2}>
