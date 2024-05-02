@@ -41,9 +41,8 @@ const Body2 = () => {
                 marginRight: { xs: 5, sm: 8, md: 10 }
               }}
             >
-              Soy estudiante de desarrollo de software en UADE.
-              Siempre estoy sumando conocimientos, ya sea con cursos online o de forma autodidacta.
-              Me encanta el mundo de la programación y disfruto crear soluciones ingeniosas para resolver problemas.
+              Soy desarrollador de software Fullstack con experiencia en las ultimas tecnologías del mercado.
+              En busca de nuevos desafíos y oportunidades para seguir creciendo profesionalmente
             </Typography>) : <Typography
               variant="h3"
               sx={{
@@ -57,10 +56,9 @@ const Body2 = () => {
                 marginLeft: { xs: 5, sm: 8, md: 10 },
                 marginRight: { xs: 5, sm: 8, md: 10 }
               }}>
-
-              I am a software development student at UADE.
-              Always adding knowledge, whether with online courses or self-taught.
-              In love with the programming world and enjoy creating ingenious solutions to solve problems.</Typography>}
+              I am a Fullstack software developer with experience in the latest technologies on the market.
+              In search of new challenges and opportunities to continue growing professionally 
+              </Typography>}
         </Grid>
       </Grid>
       <Grid mt={5} mb={6}>

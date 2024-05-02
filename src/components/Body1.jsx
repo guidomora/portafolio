@@ -31,7 +31,7 @@ const Body1 = () => {
           }}
         >
          {(esp == true) ?
-              "Hola soy Guido! Web developer" : "Hi I'm Guido! Web developer"}
+              "Hola soy Guido!" : "Hi I'm Guido!"}
         </Typography>
       </Grid>
        <Animation/>

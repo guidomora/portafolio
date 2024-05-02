@@ -72,6 +72,7 @@ const Projects = () => {
                     variant="body2"
                     color="primary.third"
                     fontWeight={300}
+                    fontSize={13}
                     sx={{ fontFamily: "Montserrat, sans-serif", textTransform:"none"  }}
                   >
                     {esp ? proyecto.descripcion : proyecto.description}

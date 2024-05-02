@@ -21,7 +21,7 @@ export const myTheme =  createTheme({
         fontFamily: [
             'Instrument Sans',
         ]
-    }
+    },
 })
 
 // #480CA8 violeta
