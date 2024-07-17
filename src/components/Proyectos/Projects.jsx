@@ -46,8 +46,10 @@ const Projects = () => {
       {loading ? proyectos.map((proyecto) => (
         <div data-aos="fade-up" key={proyecto.titulo}
           data-aos-anchor-placement="center-bottom">
-          <Card sx={{ maxWidth: 345, margin: 3, boxShadow: "0px 0px 55px 0px rgba(137, 82, 253, 0.4)", 
-          backgroundColor:"primary.main", border:"solid 1px rgba(137, 82, 253, 0.3)" }} key={proyecto.titulo}>
+          <Card sx={{
+            maxWidth: 345, margin: 3, boxShadow: "0px 0px 55px 0px rgba(137, 82, 253, 0.4)",
+            backgroundColor: "primary.main", border: "solid 1px rgba(137, 82, 253, 0.3)"
+          }} key={proyecto.titulo}>
             <CardActionArea>
               <Link to={proyecto.link} className="subrayado" target="_blank">
                 <CardMedia
@@ -62,9 +64,11 @@ const Projects = () => {
                     gutterBottom
                     variant="h5"
                     component="div"
-                    sx={{ fontFamily: "Montserrat, sans-serif", textTransform:"capitalize",background: "linear-gradient(90.01deg,#e59cff .01%,#ba9cff 50.01%,#9cb2ff 100%),linear-gradient(180deg,rgba(255,255,255,.4) 0%,rgba(255,255,255,.28) 100%)",
-                    WebkitBackgroundClip: "text",
-                    color: "transparent", }}
+                    sx={{
+                      fontFamily: "Montserrat, sans-serif", textTransform: "capitalize", background: "linear-gradient(90.01deg,#e59cff .01%,#ba9cff 50.01%,#9cb2ff 100%),linear-gradient(180deg,rgba(255,255,255,.4) 0%,rgba(255,255,255,.28) 100%)",
+                      WebkitBackgroundClip: "text",
+                      color: "transparent",
+                    }}
                   >
                     {esp ? proyecto.titulo : proyecto.title}
                   </Typography>
@@ -73,7 +77,7 @@ const Projects = () => {
                     color="primary.third"
                     fontWeight={300}
                     fontSize={13}
-                    sx={{ fontFamily: "Montserrat, sans-serif", textTransform:"none"  }}
+                    sx={{ fontFamily: "Montserrat, sans-serif", textTransform: "none" }}
                   >
                     {esp ? proyecto.descripcion : proyecto.description}
 
@@ -83,7 +87,6 @@ const Projects = () => {
             </CardActionArea>
           </Card>
         </div>
-
       )) : <CircularProgress />}
 
     </Grid>

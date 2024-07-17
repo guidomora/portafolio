@@ -29,13 +29,15 @@ const NavBar = () => {
         position="fixed"
         sx={{
           // boxShadow: "0px 0px 55px 0px rgba(94, 52, 161, 0.5)",
-          boxShadow: "0px 0px 55px 0px rgba(137, 82, 253, 0.75)", 
+          boxShadow: "0px 0px 55px 0px rgba(137, 82, 253, 0.75)",
           display: "flex",
           flexDirection: "row",
-          justifyContent: {xs:'space-evenly',sm:"space-between"},
+          justifyContent: { xs: 'space-evenly', sm: "space-between" },
           height: 70,
           width: "100%",
-          backgroundColor: "black",
+          backgroundColor: "rgba(0, 0, 0, 0.5)", // Fondo semitransparente
+          backdropFilter: "blur(10px)", // Aplicar el efecto de desenfoque
+          WebkitBackdropFilter: "blur(10px)", // Compatibilidad con navegadores basados en Webkit
         }}
       >
         <Grid display={"flex"} alignItems={"center"} marginLeft={2}>
@@ -45,12 +47,12 @@ const NavBar = () => {
         </Grid>
         <Grid display={"flex"} alignItems={"center"} marginLeft={2}>
           <button onClick={scrollToProjects} className="buttonsNav">
-          {(esp == true) ? "Proyectos" : "Projects"}
+            {(esp == true) ? "Proyectos" : "Projects"}
           </button>
         </Grid>
         <Grid
           sx={{
-            marginRight:2,
+            marginRight: 2,
             display: "flex",
             flexDirection: "row",
             justifyContent: "space-between",
@@ -58,9 +60,9 @@ const NavBar = () => {
           }}
         >
           <button className="buttonsNav2">
-          <Link onClick={scrollToContact} sx={{marginLeft:1, textDecoration: "none"}}>
-              <Typography variant="p" sx={{ color: "white", marginRight: 1, fontWeight:400, fontFamily:'Montserrat', textTransform:'none'}}>
-              {(esp == true) ? "Contacto" : "Contact me"}
+            <Link onClick={scrollToContact} sx={{ marginLeft: 1, textDecoration: "none" }}>
+              <Typography variant="p" sx={{ color: "white", marginRight: 1, fontWeight: 400, fontFamily: 'Montserrat', textTransform: 'none' }}>
+                {(esp == true) ? "Contacto" : "Contact me"}
               </Typography>
             </Link>
           </button>
