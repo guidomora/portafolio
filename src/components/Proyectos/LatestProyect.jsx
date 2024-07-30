@@ -113,7 +113,7 @@ const LatestProyect = (props) => {
     const onLoading = () => {
         if (loading) {
             return (
-                <div style={{ display: 'flex', justifyContent: "center" }}>
+                <div style={{ display: 'flex', justifyContent: "center", height:'50vh', alignItems:'center' }}>
                     <LoadingCube />
                 </div>
             )
