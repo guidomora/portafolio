@@ -68,7 +68,7 @@ const Body3 = () => {
             }}
           >
             {(esp == true) ?
-              "Mis proyectos" : "My projects"}
+              "Trabajos & Proyectos" : "Projects & Works"}
           </Typography>
         </Grid>
         <Grid
